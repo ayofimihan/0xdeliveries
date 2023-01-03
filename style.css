@@ -1,0 +1,198 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 10px;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  font-family: "Clash Display", sans-serif;
+  background-color: #fbede6;
+}
+a {
+  text-decoration: none;
+}
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.left-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ul-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.ul-nav li {
+  margin: 1rem;
+}
+.ul-nav a {
+  color: #575757;
+  font-size: 16px;
+  font-size: 400;
+}
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-section h2 {
+  font-size: 3rem;
+  margin: 1rem;
+}
+.main-section h2:nth-child(2) {
+  margin-top: 0rem;
+}
+.main-section p {
+  font-size: 1rem;
+  margin: 0 5rem;
+  line-height: 1.8rem;
+  word-spacing: 0.2rem;
+}
+.ship-btn {
+  background-color: #575757;
+  padding: 10px 16px;
+  border: 1px dotted;
+  border-radius: 9999px;
+  background: linear-gradient(305.17deg, #cc0495 15.89%, #ff628d 237.61%);
+  margin-top: 2rem;
+  color: aliceblue;
+}
+.ship-btn:hover {
+  box-shadow: 0 0 10px rgba(228, 76, 116, 1);
+}
+
+.svg1 {
+  width: 300px;
+  height: 300px;
+  margin-top: 6rem;
+}
+.svgg {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  animation-name: move;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+}
+
+.gridsection {
+  display: grid;
+  grid-template-columns: 50fr 50fr;
+  justify-items: center;
+  border: 1rem;
+  place-items: center;
+  gap: 10rem;
+  margin: 5rem;
+  padding: 1rem;
+}
+
+.gridsection form {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  border: 1px black solid;
+  border-radius: 24px;
+}
+
+.gridsection form input {
+  border: none;
+  background-color: inherit;
+  outline: none;
+}
+.gridsection form button {
+  padding: 5px 10px;
+  margin: 2px;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 14px;
+}
+.shippingservices {
+  text-align: center;
+  padding: 1rem;
+}
+.package-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.package-left {
+  border: 1px solid rgba(228, 76, 116, 1);
+  padding: 1rem;
+}
+.package-right-container {
+  display: flex;
+  border: 1px solid rgba(228, 76, 116, 1);
+  flex-direction: column;
+  padding: 0.4rem;
+}
+
+.figures {
+  display: flex;
+}
+.vl {
+  border: 0.5px solid rgba(228, 76, 116, 1);
+  margin-bottom: 0.5rem;
+}
+
+.shippingservices h2 {
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.testimonies {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.testimony {
+  margin-bottom: 1rem;
+}
+
+.testimony p {
+  width: 50%;
+  line-height: 2rem;
+}
+
+.testimonies-container h3 {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 3rem;
+}
+.line {
+  display: flex;
+  justify-content: center;
+}
+.line hr {
+  display: block;
+  border: none;
+  border: 1px solid gainsboro;
+  width: 47%;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@keyframes move {
+  to {
+    transform: translateX(-100%);
+  }
+}
