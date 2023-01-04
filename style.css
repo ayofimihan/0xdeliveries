@@ -42,6 +42,11 @@ a {
   font-size: 16px;
   font-size: 400;
 }
+.ul-nav a:hover {
+  color: #575757;
+  font-size: 17px;
+  font-size: 400;
+}
 .main-section {
   display: flex;
   flex-direction: column;
@@ -166,7 +171,7 @@ a {
 }
 
 .testimony p {
-  width: 50%;
+  width: 50ch;
   line-height: 2rem;
 }
 
@@ -174,6 +179,9 @@ a {
   text-align: center;
   font-weight: 500;
   margin-top: 3rem;
+}
+small{
+  color: grey;
 }
 .line {
   display: flex;
@@ -185,11 +193,25 @@ a {
   border: 1px solid gainsboro;
   width: 47%;
 }
-footer{
+.p2 {
+  border: 1px solid;
+  padding: 0.3rem;
+}
+footer {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
 }
+footer a {
+  color: #cc0495;
+  text-decoration: none;
+  
+}
+footer a:hover{
+  color: #ca78b3;
+}
+
 
 @keyframes move {
   to {
