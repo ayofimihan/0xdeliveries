@@ -83,17 +83,13 @@ a {
 .svg1 {
   width: 300px;
   height: 300px;
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 .svgg {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  animation-name: move;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-delay: 3s;
+  animation: move 5s linear infinite;
 }
 
 .gridsection {
@@ -180,7 +176,7 @@ a {
   font-weight: 500;
   margin-top: 3rem;
 }
-small{
+small {
   color: grey;
 }
 .line {
@@ -206,15 +202,17 @@ footer {
 footer a {
   color: #cc0495;
   text-decoration: none;
-  
 }
-footer a:hover{
+footer a:hover {
   color: #ca78b3;
 }
 
-
 @keyframes move {
-  to {
-    transform: translateX(-100%);
+  25% {
+    transform: translateX(-15%);
+  }
+  50% {
+    perspective: 200px;
+    transform: rotate3d(0.1, 0.1, 0.1, 3deg);
   }
 }
